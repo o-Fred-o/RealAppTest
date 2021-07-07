@@ -30,3 +30,8 @@ White
 Exemple interface: https://material.io/design/color/dark-theme.html#ui-application
 
 Pour les icones : https://icons.getbootstrap.com/icons/
+
+resultat meteo :
+http://api.openweathermap.org/data/2.5/weather?q=lille&units=metric&appid=e9419816e84fe4341310b5df20291125
+
+{base:stations, clouds:{all:0}, cod:200, coord:{lat:50.633, lon:3.0586}, dt:1625687178, id:2998324, main:{feels_like:18.25, humidity:64, pressure:1017, temp:18.66, temp_max:19.12, temp_min:15.83}, name:Lille, sys:{country:FR, id:6559, sunrise:1625629449, sunset:1625688050, type:1}, timezone:7200, visibility:10000, weather:[{description:clear sky, icon:01d, id:800, main:Clear}], wind:{deg:300, speed:2.57}}
