@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://component/Meteo_Widget.gd" type="Script" id=1]
-[ext_resource path="res://assets/fonts/Roboto_32.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/fonts/Roboto_32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://component/Meteo/Meteo_Widget.gd" type="Script" id=2]
 
 [node name="Meteo_Widget" type="VBoxContainer"]
 margin_left = 5.0
 margin_top = 5.0
 margin_right = 1019.0
 margin_bottom = 595.0
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -46,7 +46,7 @@ margin_right = 1014.0
 margin_top = 4.0
 margin_right = 1014.0
 margin_bottom = 50.0
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
 align = 1
 
 [node name="Weather_description" type="Label" parent="VBoxContainer"]

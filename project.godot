@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "TaskModel",
 "language": "GDScript",
 "path": "res://model/TaskModel.gd"
+}, {
+"base": "Object",
+"class": "UserDict",
+"language": "GDScript",
+"path": "res://model/UserDict.gd"
 } ]
 _global_script_class_icons={
 "GitAPI": "",
 "ListModel": "",
-"TaskModel": ""
+"TaskModel": "",
+"UserDict": ""
 }
 
 [application]

@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-const TASK_ITEM := preload("res://component/Task.tscn")
+const TASK_ITEM := preload("res://component/TodoList/Task.tscn")
 
 onready var list_container := $ScrollContainer/TasksContainer
 

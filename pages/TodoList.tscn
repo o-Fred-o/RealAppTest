@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://component/Task.tscn" type="PackedScene" id=1]
-[ext_resource path="res://component/List.tscn" type="PackedScene" id=2]
+[ext_resource path="res://component/TodoList/Task.tscn" type="PackedScene" id=1]
+[ext_resource path="res://component/TodoList/List.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/theme/app_theme.tres" type="Theme" id=3]
-[ext_resource path="res://component/Actions.tscn" type="PackedScene" id=4]
+[ext_resource path="res://component/TodoList/Actions.tscn" type="PackedScene" id=4]
 
 [node name="TodoList_Page" type="Control"]
 anchor_right = 1.0
