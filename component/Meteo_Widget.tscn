@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://component/Meteo_Widget.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/Roboto_32.tres" type="DynamicFont" id=2]
 
 [node name="Meteo_Widget" type="VBoxContainer"]
 margin_left = 5.0
@@ -8,6 +9,9 @@ margin_top = 5.0
 margin_right = 1019.0
 margin_bottom = 595.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="City_Input" type="HBoxContainer" parent="."]
 margin_left = 381.0
@@ -32,24 +36,43 @@ margin_right = 1014.0
 margin_bottom = 590.0
 size_flags_vertical = 3
 
-[node name="City_name" type="Label" parent="VBoxContainer"]
+[node name="Icon_Container" type="VBoxContainer" parent="VBoxContainer"]
 margin_right = 1014.0
-margin_bottom = 22.0
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/Icon_Container"]
+margin_right = 1014.0
+
+[node name="City_name" type="Label" parent="VBoxContainer"]
+margin_top = 4.0
+margin_right = 1014.0
+margin_bottom = 50.0
+custom_fonts/font = ExtResource( 2 )
 align = 1
 
 [node name="Weather_description" type="Label" parent="VBoxContainer"]
-margin_top = 26.0
+margin_top = 54.0
 margin_right = 1014.0
-margin_bottom = 48.0
+margin_bottom = 76.0
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Feels_like" type="Label" parent="VBoxContainer"]
-margin_top = 52.0
+margin_top = 80.0
 margin_right = 1014.0
-margin_bottom = 74.0
+margin_bottom = 102.0
 align = 1
 
+[node name="Temp_min" type="Label" parent="VBoxContainer"]
+margin_top = 106.0
+margin_right = 1014.0
+margin_bottom = 128.0
+align = 1
+
+[node name="Temp_max" type="Label" parent="VBoxContainer"]
+margin_top = 132.0
+margin_right = 1014.0
+margin_bottom = 154.0
+align = 1
 [connection signal="pressed" from="City_Input/Check" to="." method="_on_Check_pressed"]
