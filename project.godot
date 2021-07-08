@@ -41,6 +41,10 @@ config/icon="res://icon.png"
 Events="*res://autoloads/Events.gd"
 Global="*res://autoloads/Global.gd"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "godot-sqlite" )
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
